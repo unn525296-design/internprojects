@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Efficient Model Of Calculator</title>
+
+    <style>
+        body{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .calculate{
+
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #aaa;
+        }
+
+        input,button{
+
+            margin: 5px;
+            padding: 10px;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculate">
+
+        <input type="number" id="num1" placeholder="First Number">
+        <br><br>
+        <input type="number" id="num2" placeholder="Second Number">
+        <br><br>
+        <button onclick="calculate('+')">+</button>
+        <button onclick="calculate('-')">-</button>
+        <button onclick="calculate('*')">*</button>
+        <button onclick="calculate('/')">/</button>
+        <h3 id="result">result</h3>
+    </div>
+    
+    <script src="Calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <style>
+        body{
+
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            background: #d0f0f7;
+
+        }
+
+        .card{
+
+            background: skyblue;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 10px rgba(0,0,0,0,2);
+            width: 300px;
+
+        }
+        input{
+
+            padding: 8px;
+            width: 70%;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            
+        }
+
+        button{
+
+            padding: 0px 12px;
+            margin-left: 5px;
+            background: #0077ff;
+            border: none;
+            cursor: pointer;
+
+        }
+        img{
+            margin-top: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="card">
+        <h2>&#127782; &#65039; Weather ForeCasting</h2>
+        <input type="text" id="cityInput" placeholder="Enter Your City Name">
+        <button id="searchBtn">Search</button>
+        <div id="result"></div>
+    </div>
+    <script src="weatherproject.js"></script>
+</body>
+</html>
